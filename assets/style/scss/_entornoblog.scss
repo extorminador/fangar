@@ -1,0 +1,79 @@
+/* ------- Entorno & Blog ------ */
+.card-shadow {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 80px;
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,.3);
+    background: white;
+    transition: 0.3s ease;
+}
+
+.card-shadow:hover {
+    box-shadow: 0px 0px 19px 0px rgba(0,0,0,.6);
+}
+
+.secondary-bg {
+    background: $secondary;
+}
+
+.card-image-blog {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.card-text-blog {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.post-label {
+    position: absolute;
+    z-index: 1;
+    text-align: left;
+    width: 120px;
+    height: 42px;
+    padding-top: 8px;
+    font-family: 'Source Sans Pro', serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: $white;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: none;
+}
+
+.carousel-post-label {
+    top: 30px;
+}
+
+
+
+/* ------- Post ------ */
+
+
+
+
+@media (min-width: 480px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {
+
+    .principal {
+        right: -155px;
+    }
+
+    .principal-post {
+        right: 0px;
+    }
+}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1500px) {}
+
+
+
+
+
+

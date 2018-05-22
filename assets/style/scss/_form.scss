@@ -1,0 +1,80 @@
+.input-field label {
+    font-family: 'Source Sans Pro', serif;
+    font-weight: 400;
+}
+
+.datepicker:hover,
+.select-wrapper input.select-dropdown:hover,
+input[type=text]:hover,
+input[type=email]:hover, {
+    border-bottom: 1px solid $primary;
+    box-shadow: 0 1px 0 0 $primary;
+}
+
+/* label color */
+.input[type=text] {
+
+    color: $primary;
+}
+
+/* label color */
+.input-field label {
+
+    color: $ligthenbrown;
+}
+
+/* label focus color */
+input:not([type]),
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=url],
+input[type=time],
+input[type=date],
+input[type=datetime],
+input[type=datetime-local],
+input[type=tel],
+input[type=number],
+input[type=search],
+textarea.materialize-textarea {
+     color: $secondary;
+}
+
+/* label underline focus color */
+.input-field input[type=text]:focus,
+.input-field input[type=email]:focus, {
+
+    border-bottom: 1px solid $primary;
+    box-shadow: 0 1px 0 0 $primary;
+}
+
+/* valid color */
+.input-field input[type=text].valid,
+.input-field input[type=email].valid,
+.input-field input[type=date].valid,
+.input-field input[type=datetime].valid,
+.input-field input[type=datetime-local].valid,
+.input-field input[type=tel].valid,
+.input-field input[type=number].valid,
+.input-field input[type=search].valid {
+    border-color: $primary;
+    border-bottom: 1px solid $primary;
+    box-shadow: 0 1px 0 0 $primary;
+}
+
+/* invalid color */
+.input-field input[type=text].invalid {
+    border-bottom: 1px solid red;
+    box-shadow: 0 1px 0 0 red;
+}
+
+/* icon prefix focus color */
+.input-field .prefix.active {
+    color: yellow;
+}
+
+.picker__input.picker__input--active {
+    border-color: $primary;
+    border-bottom: 1px solid $primary;
+    box-shadow: 0 1px 0 0 $primary;
+}

@@ -1,0 +1,109 @@
+.button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: $body-bg;
+    border: 1px solid $primary;
+    border-radius: 0px;
+    font-family: 'Source Sans Pro', serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: $primary;
+    transition: 0.3s ease;
+    box-shadow: none;
+}
+
+.button:hover {
+    background: $secondary;
+    border: 1px solid $secondary;
+    color: white;
+    text-decoration: none;
+    box-shadow: none;
+}
+
+.button {
+  &:focus {
+    color: $primary !important;
+    text-decoration: none;
+  }
+}
+
+.button.active {
+    color: $white !important;
+    background: $secondary;
+    border: 1px solid $secondary;
+}
+
+.button-secondary {
+    color: $white;
+    background: $secondary;
+    border: 1px solid $white;
+}
+
+.button-secondary:hover {
+    color: $secondary;
+    background: $white;
+    border: 1px solid $white;
+}
+
+.button-large {
+    width: 220px;
+}
+
+
+.button_little {
+    margin-left: 0;
+    width: 104px;
+    margin-top: 20px;
+}
+
+.button_little_center {
+    margin-right: auto;
+    margin-left: auto;
+    width: 104px;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.button_little_right {
+    margin-right: 0;
+    width: 104px;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.button-primary{
+    width: 208px;
+    margin-top: 38px;
+    background: $primary;
+    color: $white;
+    margin-right: 0;
+}
+
+.button-primary-form{
+    width: auto;
+    margin-top: 38px;
+    background: $primary;
+    color: $white;
+    margin-right: 0;
+}
+
+.button-primary-center {
+    margin-top: 20px;
+    background: $primary;
+    color: $white;
+    padding: 0;
+}
+
+
+@media (min-width: 768px) {
+
+    .button-primary{
+        margin-top: 0px;
+    }
+
+}
+
+[type="checkbox"]+label:before{
+    border: 2px solid $secondary;
+}

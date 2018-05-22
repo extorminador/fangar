@@ -1,0 +1,114 @@
+.footer {
+    position: relative;
+    background: $secondary;
+}
+
+.container-footer {
+    width: 100%;
+    position: absolute;
+    margin-top: -650px;
+    // height: auto;
+    background: $secondary;
+    padding-bottom: 0px;
+}
+
+.container-footer-Subpage{
+    width: 100%;
+    position: absolute;
+    margin-top: 0px;
+    // height: auto;
+    background: $secondary;
+    padding-bottom: 0px;
+}
+
+.copy_container {
+    margin-top: 60px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.copy {
+    font-size: 20px;
+    line-height: 35px;
+    padding-top: 0px;
+    color: $white;
+}
+
+.footer-div{
+    height: 220px;
+}
+
+.footer-text {
+    font-size: 22px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: $white;
+}
+
+.footer-title {
+    padding-top: 40px;
+}
+
+.footer-phone {
+    padding-top: 0px;
+}
+
+.footer-phone:hover {
+    color: $white;
+    text-decoration: none;
+}
+
+.logo-roig {
+    width: 200px;
+}
+
+.tripadvisorStar{
+    margin-top: 20px;
+}
+
+.tripadvisor-Opiniones{
+    display: block;
+    color: $white;
+    margin-top: 10px;
+}
+
+.tripadvisorLogo{
+    width: 208px;
+    margin-top: 0px;
+}
+
+.social-icon {
+    font-size: 52px;
+    padding-right: 20px;
+    color: $white;
+}
+
+// @media (min-width: 480px) {}
+
+@media (min-width: 768px) {
+
+    .container-footer {
+        margin-top: -350px;
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    .container-footer {
+        margin-top: -150px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    .container-footer {
+        margin-top: -150px;
+    }
+}
+
+@media (min-width: 1500px) {
+
+}

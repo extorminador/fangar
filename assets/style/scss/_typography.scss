@@ -1,0 +1,462 @@
+@font-face {
+    font-family: Lora;
+    src: url(../assets/font/Lora-Regular.ttf);
+}
+
+@font-face {
+    font-family: Lora Bold;
+    src: url(../assets/font/Lora-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'notera_personal_use_onlyRg';
+    src: url('notera.woff2') format('woff2'),
+         url('notera.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html {
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  color: $secondary;
+  font-family: 'Source Sans Pro', serif !important;
+  font-weight: 400 !important;;
+}
+
+body {
+    background: $body-bg;
+    font-family: 'Source Sans Pro', serif !important;
+    font-weight: 400 !important;;
+}
+
+h1,h2,h3,h4,h4,h5,h6,
+ul, ol, dl,
+p, blockquote {
+  margin-top: 0;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  margin-bottom: 0;
+}
+
+h1,h2,h3,h4,h4,h5,h6 {
+/*     font-family: 'Lora-Bold', serif;
+ */}
+
+h2 {
+    font-size: 42px;
+    line-height: 52px;
+    font-family: 'Lora-Regular', serif;
+    text-transform: uppercase;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    white-space:pre-line;
+}
+
+h3 {
+    font-size: 32px;
+    line-height: 42px;
+    font-family: 'Lora-Regular', serif;
+    text-transform: uppercase;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    white-space:pre-line;
+}
+
+h4 {
+    font-size: 28px;
+    line-height: 32px;
+    font-family: 'Lora-Regular', serif;
+    text-transform: uppercase;
+    white-space:pre-line;
+}
+
+h5 {
+    font-size: 22px;
+    line-height: 24px;
+    font-family: 'Lora-Regular', serif;
+    text-transform: uppercase;
+    white-space:pre-line;
+}
+
+p::selection {
+    background: $primary;
+    color: $white;
+}
+
+a:hover {
+    color: $secondary;
+    text-decoration: none;
+}
+
+// Links
+
+a {
+  color: $primary;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: lighten($secondary, 20%);
+    text-decoration: none;
+  }
+}
+
+blockquote {
+    font-family: 'Seaweed Script', cursive;
+    font-size: 42px;
+    line-height: 48px;
+    letter-spacing: 2px;
+    color: lighten($secondary, 40%);
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    margin-left: 40px;
+    margin-right: 40px;
+    white-space:pre-line;
+    border-left: none;
+}
+
+.space {
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.sectionTitle {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Lora-Regular', serif;
+    font-size: 30px;
+    line-height: 36px;
+    color: $white;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0px 0 20px 0;
+    white-space:pre-line;
+    text-shadow: 0 1px 10px rgba(0, 0, 0, .6);
+}
+
+.sectionTitleBlog{
+    padding-top: 5px;
+    padding-bottom: 0px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.text {
+    font-family: 'Source Sans Pro', serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: left;
+    color: $secondary;
+    padding-bottom: 15px;
+}
+
+.text-bold {
+    font-weight: 600;
+}
+
+.text-date-tarifas {
+    font-family: 'Source Sans Pro', serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: left;
+    color: $secondary;
+    padding-bottom: 15px;
+}
+
+.text-price-tarifas {
+    font-size: 16px;
+    font-weight: 600;
+    padding-right: 20px;
+}
+
+.person_tarifas {
+    margin-left: -11px;
+}
+
+.date {
+    font-family: 'Source Sans Pro', serif;
+    font-weight: 400;
+    font-size: 18px;
+    padding-top: 10px;
+    color: lighten($secondary, 40%);
+}
+
+.tag {
+    font-family: 'Source Sans Pro', serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding-top: 10px;
+    color: lighten($secondary, 40%);
+    padding-left: -15px;
+}
+
+.tag-bg {
+    font-family: 'Source Sans Pro', serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 40px;
+    margin-left: 10px;
+    padding: 2px 10px;
+    color: $white;
+    padding-left: -15px;
+    background: lighten($secondary, 40%);
+    border-radius: 4px;
+    transition: 0.3s ease;
+}
+
+.tag-bg-share{
+    padding-top: 24px;
+}
+
+.tag-bg:hover {
+    color: $white;
+    background: $secondary;
+}
+
+.tag-bg-secondary:hover {
+    color: $secondary;
+    background: $white;
+}
+
+.italic {
+    font-style: italic;
+}
+
+
+.bold {
+    font-weight: 600;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.pre-line {
+    white-space:pre-line;
+}
+
+
+.text-lite {
+    font-family: 'Source Sans Pro', serif;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: $secondary;
+}
+
+
+.primary {
+    color: $primary;
+}
+
+.primary-bg {
+    background: $primary;
+}
+
+.secondary {
+    color: $secondary;
+}
+
+.third {
+    color: $third;
+}
+
+.white-text {
+    color: $white !important;
+}
+
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.padding_top {
+    padding-top: 40px;
+}
+
+.padding_top_20 {
+    padding-top: 20px;
+}
+
+.padding_top_60 {
+    padding-top: 60px;
+}
+
+.padding_top_aside {
+    padding-top: 40px;
+}
+
+.padding_bottom {
+    padding-bottom: 40px;
+}
+
+.maggin-top_40 {
+    margin-top: 40px;
+}
+
+.maggin-bottom_40 {
+    margin-bottom: 40px;
+}
+
+.maggin-bottom_galeria {
+    margin-bottom: 40px;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.no-padding-bottom {
+    padding-bottom: 0px;
+}
+
+.no_maggin-bottom {
+    margin-bottom: 0;
+}
+
+.no-padding-left {
+    padding-left: 0px;
+}
+
+.map {
+    height: 300px;
+}
+
+.margin-row-2 {
+    margin-top: -700px;
+}
+
+.margin-footer {
+    margin-bottom: 700px;
+}
+
+
+
+
+
+@media (min-width: 480px) {
+    .sectionTitle {
+        font-size: 42px;
+        line-height: 42px;
+    }
+
+    .sectionTitleBlog{
+        padding-top: 20px;
+        padding-bottom: 0px;
+        font-size: 32px;
+        line-height: 32px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .sectionTitle {
+        font-size: 52px;
+        line-height: 60px;
+    }
+
+    .sectionTitleBlog{
+        padding-top: 0;
+        font-size: 40px;
+        line-height: 50px;
+        white-space:pre-line;
+    }
+
+    .text-price-tarifas {
+        font-size: 18px;
+        padding-right: 20px;
+    }
+
+    .map {
+        height: 600px;
+    }
+
+    .margin-row-2 {
+        margin-top: -450px;
+    }
+
+    .maggin-bottom_galeria {
+        margin-bottom: 0px;
+    }
+
+    .margin-footer {
+        margin-bottom: 400px;
+    }
+}
+
+
+@media (min-width: 992px) {
+
+    .sectionTitle {
+        font-size: 60px;
+        line-height: 66px;
+    }
+
+    .padding_top.blog {
+        padding-top: 60px;
+    }
+
+    .padding_top_aside {
+        padding-top: 0px;
+    }
+
+    .text {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .text-price-tarifas {
+    font-size: 22px;
+}
+
+    .date {
+        font-size: 22px;
+    }
+
+    .tag {
+        font-size: 18px;
+    }
+
+    .margin-row-2 {
+        margin-top: -250px;
+    }
+
+    .margin-footer {
+        margin-bottom: 250px;
+    }
+}
+
+@media (min-width: 1500px) {
+
+    .sectionTitle {
+        font-size: 66px;
+        line-height: 66px;
+    }
+
+    .text {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .text-price-tarifas {
+        font-size: 22px;
+    }
+
+    .margin-row-2 {
+        margin-top: -350px;
+    }
+}

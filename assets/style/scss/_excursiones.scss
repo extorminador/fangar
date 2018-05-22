@@ -1,0 +1,86 @@
+.containerExcursiones {
+    z-index: 1;
+    position: relative;
+    height: auto;
+    top: -700px;
+    padding-top: 40px;
+}
+
+.padding {
+    padding: 0;
+}
+
+.excursion_row {
+    margin-top: 40px;
+}
+
+.excursion {
+    margin-top: 40px;
+}
+
+.round_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 80%;
+    margin-top: -90%;
+    border-radius:50%;
+    border: 3px solid $white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+.flower_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 480px) {
+
+}
+
+@media (min-width: 768px) {
+
+    .containerExcursiones {
+        top: -450px
+    }
+
+    .excursion_row {
+        margin-top: 60px;
+    }
+
+    .excursion {
+        margin-top: 40px;
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    .containerExcursiones {
+        top: -250px;
+    }
+
+    .excursion {
+        margin-top: 0px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+
+
+
+}
+
+@media (min-width: 1500px) {
+
+    .round_img {
+        margin-top: -200px;
+    }
+
+
+}

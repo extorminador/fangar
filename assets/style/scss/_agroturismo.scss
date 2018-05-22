@@ -1,0 +1,313 @@
+.containerDescrition{
+    padding-bottom: 60px;
+}
+
+.aside {
+    padding-top: 42px;
+}
+
+.icon_materialize {
+    font-size: 36px;
+    vertical-align: middle;
+    color: lighten($secondary, 20%)
+}
+
+.icon_materialize-small {
+    font-size: 24px;
+    vertical-align: middle;
+    color: lighten($secondary, 40%);
+    transition: 0.3s ease;
+}
+
+.icon_materialize-small:hover {
+    color: $secondary;
+}
+
+.moon {
+    margin-left: 20px;
+    transform: rotate(150deg);
+    margin-bottom: -10px;
+}
+
+.middle {
+    vertical-align: middle;
+}
+
+.lista {
+    padding-bottom: 10px;
+    border-bottom: 1px solid lighten($secondary, 40%);
+}
+
+
+
+
+/* Desplegable casas */
+// .section-content-casas {
+//     margin-bottom: 1000px;
+// }
+
+section .slider-block {
+    padding: 2.525em 0;
+}
+
+
+.section-casas {
+    margin-top: -80px;
+    margin-bottom: 0px;
+}
+
+.w4 {
+    position: relative;
+    box-sizing: border-box;
+}
+
+.w4.active {
+    min-height: 1350px;
+}
+
+.seccion-sectores {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.seccion-sectores div li.casaDesplegar {
+    display: inline-block;
+    width: 25%;
+    position: relative;
+
+}
+
+.seccion-sectores div li.casaDesplegar {
+    display: block;
+    width: 100%;
+    border-right: none;
+    margin-bottom: 50px;
+}
+
+
+.seccion-sectores .w4 li.casaDesplegar.active:before{
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 25px solid lighten($secondary, 60%);
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    z-index: 4;
+    transform: translateX(-50%);
+}
+
+
+.logistica .content.active {
+    max-height: auto;
+    height: auto;
+}
+
+.content {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    z-index: 10;
+    position: absolute;
+    left: 0%;
+    display: none;
+    width: 120%;
+    transition: all .5s;
+    background-color: lighten($secondary, 60%);
+}
+
+.content.active {
+    transition: all .5s;
+    min-height: 1350px;
+    margin-bottom: 100px;
+    left: -20%;
+    padding-left: 20%;
+    padding-right: 20%;
+    width: 142%;
+    display: block;
+    opacity: 1;
+    position: relative;
+}
+
+
+.desplegable {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.casa-form {
+    padding-top: 50px;
+}
+
+.row-form {
+    margin-bottom: 0;
+}
+
+
+
+@media (min-width: 480px) {
+
+    .seccion-sectores div li.casaDesplegar {
+        display: block;
+        width: 100%;
+        border-right: none;
+    }
+}
+
+@media (min-width: 768px) {
+
+    li.active:before{
+        bottom: -100px;
+    }
+
+    .seccion-sectores div li.casaDesplegar {
+        display: inline-block;
+        width: calc(50% - 20px);
+        margin-left: 15px;
+        margin-bottom: 100px;
+        height: auto;
+        position: relative;
+    }
+
+    .content.active {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        transition: all .5s;
+        min-height: 1000px;
+        display: block;
+        opacity: 1;
+        position: absolute;
+    }
+
+    .logistica .seccion-sectores div li.casaDesplegar.active {
+        margin-bottom: 1300px;
+    }
+
+
+    .content:nth-of-type(1).active,
+    .content:nth-of-type(2).active
+    {
+        top: 535px;
+    }
+
+    .content:nth-of-type(3).active,
+    .content:nth-of-type(4).active{
+        top: 1120px;
+    }
+
+    .content:nth-of-type(5).active,
+    .content:nth-of-type(6).active  {
+        top: 1705px;
+    }
+
+
+}
+
+
+@media (min-width: 992px) {
+
+    .casa {
+
+        margin-bottom: 0;
+    }
+
+
+    .casa-form {
+        padding-top: 0px;
+    }
+
+    .seccion-sectores div li.casaDesplegar {
+        display: inline-block;
+        width: calc(33.333% - 30px);
+        margin-left: 25px;
+        margin-bottom: 100px;
+        height: auto;
+        position: relative;
+    }
+
+    .seccion-sectores div li.casaDesplegar.active {
+        margin-bottom: 100px;
+        // background: red;
+    }
+
+    .content.active {
+        transition: all .5s;
+        min-height: 800px;
+        display: block;
+        opacity: 1;
+        position: absolute;
+    }
+
+    .logistica .seccion-sectores div li.casaDesplegar.active {
+        margin-bottom: 1000px;
+    }
+
+
+    .content:nth-of-type(1).active,
+    .content:nth-of-type(2).active,
+    .content:nth-of-type(3).active{
+      top: 536px;
+      }
+
+
+    .content:nth-of-type(4).active,
+    .content:nth-of-type(5).active,
+    .content:nth-of-type(6).active {
+        top: 1120px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+
+    .logistica .seccion-sectores div li.casaDesplegar.active {
+        margin-bottom: 1000px;
+    }
+
+
+    .content:nth-of-type(1).active,
+    .content:nth-of-type(2).active,
+    .content:nth-of-type(3).active{
+      top: 548px;
+      }
+
+
+    .content:nth-of-type(4).active,
+    .content:nth-of-type(5).active,
+    .content:nth-of-type(6).active {
+        top: 1145px;
+    }
+
+
+}
+
+@media (min-width: 1500px) {
+
+    // li.active:before{
+    //     bottom: -60px;
+    // }
+
+    .content:nth-of-type(1).active,
+    .content:nth-of-type(2).active,
+    .content:nth-of-type(3).active{
+      top: 610px;
+      }
+
+
+    .content:nth-of-type(4).active,
+    .content:nth-of-type(5).active,
+    .content:nth-of-type(6).active {
+        top: 1276px;
+    }
+
+
+}
+
+
+
+

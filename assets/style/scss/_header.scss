@@ -1,0 +1,319 @@
+.containerHeader {
+    background: $white;
+    max-width: 100%;
+    z-index: 1;
+    position: relative;
+}
+
+.logoContainer {
+    text-align: center;
+}
+
+.logoImg {
+    width:157px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2em;
+}
+
+.tagline {
+    font-family: 'Lora-Bold', serif;
+    font-size: 9px;
+    color: $secondary;
+    padding-top: 5px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+@media (min-width: 992px) {
+    .tagline {
+        font-size: 11px;
+        padding-top: 12px;
+
+    }
+}
+
+.idiomaContainer {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 8px;
+    font-family: 'Lora-BoldItalic', serif;
+    font-size: 12px;
+    color: $primary;
+    vertical-align: middle;
+    background: $white !important;
+    transition: 0.3s ease;
+    box-shadow: none;
+}
+
+.idiomaContainer:hover {
+    box-shadow: none;
+}
+
+.dropdown-menu > li > a {
+    color: $primary;
+}
+
+.dropdown-menu > li > a:hover {
+    color: $secondary;
+}
+
+.idiomaToggle {
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+@media (min-width: 992px) {
+    .idiomaContainer {
+        font-size: 16px;
+    }
+    .idiomaToggle {
+        font-size: 22px;
+        line-height: 10px;
+    }
+}
+
+
+.menuToggleOpen {
+    display: block;
+    margin-top: 20px;
+    text-align: right;
+}
+
+#menuToggle {
+    margin-top: -5px;
+    margin-right: -35px;
+    width: 100px;
+    height: 40px;
+    display: block;
+    display: block;
+    float: right;
+}
+
+.hamburgare{
+    height: 40px;
+    width: 40px;
+    display: block;
+    float:right;
+}
+
+.hamburgare:before {
+    font-family: 'Material Icons';
+    font-size: 32px;
+    content: "&#xE5D2";
+    content: "menu";
+    display: block;
+    margin-top: -2px;
+    text-align: right;
+    color: $primary;
+}
+
+
+.hamburgareOpen{
+    height: 40px;
+    width: 40px;
+    display: block;
+    float:right;
+}
+
+.hamburgareOpen:before {
+    font-family: 'Material Icons';
+    font-size: 32px;
+    content: "&#xE14C";
+    content: "clear";
+    display: block;
+    margin-top: -2px;
+    text-align: right;
+    color: $primary;
+}
+
+.menuText {
+    display: none;
+    margin-top: 12px;
+    text-align: right;
+    font-family: 'Lora-BoldItalic', serif;
+    font-size: 12px;
+    color: $primary;
+    text-transform: uppercase;
+}
+
+
+@media (min-width: 768px) {
+
+    .menuText {
+        display: block;
+    }
+
+    #menuToggle {
+        margin-top: -5px;
+        margin-right: -10px;
+
+    }
+
+}
+
+@media (min-width: 992px) {
+    .menuToggleOpen {
+        display: block;
+    }
+
+}
+
+/*
+   Menu
+*/
+
+nav {
+    display: none;
+    width: 100%;
+    margin: 10px auto;
+}
+
+    nav > ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        padding: 0 0px;
+    }
+
+        nav > ul > li {
+            padding: 0em;
+            text-align: center;
+            padding: 13px 10px;
+            border-bottom: 1px solid lighten($secondary,65%);
+            transition: 0.3s ease;
+        }
+
+        nav >ul > li:hover {
+            background:$body-bg;
+        }
+
+        nav >ul > li:active {
+            background:$body-bg;
+        }
+
+            nav ul > li > a {
+                font-family: 'Lora-Bold', serif;
+                font-size: 14px;
+                text-transform: uppercase;
+                transition: 0.3s ease;
+            }
+
+                nav ul > li > a:link {
+                    color: $primary;
+                }
+
+                nav ul > li > a:visited {
+                    color: $primary;
+                }
+
+                nav > ul > li > a:hover {
+                    color: $secondary;
+                    text-decoration: none;
+                    font-family: 'Lora-Bold', serif;
+                }
+
+                nav > ul > li > a.active {
+                    color: $secondary;
+                }
+
+
+
+@media screen and (min-width:768px){
+
+    nav {
+        display: block;
+    }
+
+    nav > ul {
+        display: block;
+        float: left;
+        box-sizing: border-box;
+    }
+
+        nav > ul > li {
+            float: left;
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        nav > ul > li:nth-child(even) {
+            border-left: 1px solid lighten($secondary,65%);
+        }
+}
+
+
+@media screen and (max-width:992px){
+
+      nav > ul{
+            flex-direction: column;
+        }
+}
+
+
+@media (min-width: 992px) {
+    nav {
+        margin: 50px auto;
+    }
+
+        nav > ul {
+            float:none;
+
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            padding: 0 0px;
+        }
+
+            nav > ul > li {
+                float: none;
+                width: auto;
+                text-align: center;
+                padding: 13px 10px;
+                border-bottom: 1px solid $body-bg;
+                transition: 0.3s ease;
+                border-bottom: 0px solid rgba(0,0,0,0.1);
+            }
+
+            nav > ul > li:nth-child(even) {
+                border-left: 0px solid $body-bg;
+            }
+
+            nav > ul > li:hover {
+                background:$white;
+            }
+
+                nav > ul > li > a {
+                    font-size: 14px;
+                }
+}
+
+@media (min-width: 1500px) {
+
+            nav > ul > li > a {
+                font-size: 16px;
+            }
+
+
+}
+
+
+
+
+.loggin {
+    background-color: $primary;
+    transition: 0.3s ease;
+}
+
+.loggin:hover {
+    background-color: $secondary;
+
+}
+
+.loggin > a {
+    font-family: 'Lora-Bold', serif;
+    font-size: 14px;
+    color: white !important;
+    text-transform: none;
+    padding: 0 10px;
+}

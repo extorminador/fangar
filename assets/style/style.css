@@ -1,0 +1,2267 @@
+@charset "UTF-8";
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ */
+/* line 9, scss/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+/* line 19, scss/_normalize.scss */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 33, scss/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 54, scss/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 67, scss/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ */
+/* line 77, scss/_normalize.scss */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 89, scss/_normalize.scss */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+/* line 98, scss/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 110, scss/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 118, scss/_normalize.scss */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 127, scss/_normalize.scss */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 136, scss/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 145, scss/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 154, scss/_normalize.scss */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 162, scss/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 170, scss/_normalize.scss */
+sup {
+  top: -0.5em; }
+
+/* line 174, scss/_normalize.scss */
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 185, scss/_normalize.scss */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 193, scss/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 204, scss/_normalize.scss */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 212, scss/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 221, scss/_normalize.scss */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 229, scss/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 252, scss/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 266, scss/_normalize.scss */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 277, scss/_normalize.scss */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 290, scss/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 302, scss/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 311, scss/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 322, scss/_normalize.scss */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 334, scss/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 346, scss/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ */
+/* line 356, scss/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  box-sizing: content-box;
+  /* 2 */ }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 367, scss/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 376, scss/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 387, scss/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 396, scss/_normalize.scss */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 405, scss/_normalize.scss */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 416, scss/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 421, scss/_normalize.scss */
+td,
+th {
+  padding: 0; }
+
+/* line 1, scss/_buttom.scss */
+.button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background: #f9f8f5;
+  border: 1px solid #108880;
+  border-radius: 0px;
+  font-family: 'Source Sans Pro', serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #108880;
+  transition: 0.3s ease;
+  box-shadow: none; }
+
+/* line 16, scss/_buttom.scss */
+.button:hover {
+  background: #524f4c;
+  border: 1px solid #524f4c;
+  color: white;
+  text-decoration: none;
+  box-shadow: none; }
+
+/* line 25, scss/_buttom.scss */
+.button:focus {
+  color: #108880 !important;
+  text-decoration: none; }
+
+/* line 31, scss/_buttom.scss */
+.button.active {
+  color: #ffffff !important;
+  background: #524f4c;
+  border: 1px solid #524f4c; }
+
+/* line 37, scss/_buttom.scss */
+.button-secondary {
+  color: #ffffff;
+  background: #524f4c;
+  border: 1px solid #ffffff; }
+
+/* line 43, scss/_buttom.scss */
+.button-secondary:hover {
+  color: #524f4c;
+  background: #ffffff;
+  border: 1px solid #ffffff; }
+
+/* line 49, scss/_buttom.scss */
+.button-large {
+  width: 220px; }
+
+/* line 54, scss/_buttom.scss */
+.button_little {
+  margin-left: 0;
+  width: 104px;
+  margin-top: 20px; }
+
+/* line 60, scss/_buttom.scss */
+.button_little_center {
+  margin-right: auto;
+  margin-left: auto;
+  width: 104px;
+  margin-top: 10px;
+  padding: 0; }
+
+/* line 68, scss/_buttom.scss */
+.button_little_right {
+  margin-right: 0;
+  width: 104px;
+  margin-top: 10px;
+  padding: 0; }
+
+/* line 75, scss/_buttom.scss */
+.button-primary {
+  width: 208px;
+  margin-top: 38px;
+  background: #108880;
+  color: #ffffff;
+  margin-right: 0; }
+
+/* line 83, scss/_buttom.scss */
+.button-primary-form {
+  width: auto;
+  margin-top: 38px;
+  background: #108880;
+  color: #ffffff;
+  margin-right: 0; }
+
+/* line 91, scss/_buttom.scss */
+.button-primary-center {
+  margin-top: 20px;
+  background: #108880;
+  color: #ffffff;
+  padding: 0; }
+
+@media (min-width: 768px) {
+  /* line 101, scss/_buttom.scss */
+  .button-primary {
+    margin-top: 0px; } }
+/* line 107, scss/_buttom.scss */
+[type="checkbox"] + label:before {
+  border: 2px solid #524f4c; }
+
+@font-face {
+  font-family: Lora;
+  src: url(../assets/font/Lora-Regular.ttf); }
+@font-face {
+  font-family: Lora Bold;
+  src: url(../assets/font/Lora-Bold.ttf); }
+@font-face {
+  font-family: 'notera_personal_use_onlyRg';
+  src: url("notera.woff2") format("woff2"), url("notera.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+/* line 20, scss/_typography.scss */
+html {
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  color: #524f4c;
+  font-family: 'Source Sans Pro', serif !important;
+  font-weight: 400 !important; }
+
+/* line 29, scss/_typography.scss */
+body {
+  background: #f9f8f5;
+  font-family: 'Source Sans Pro', serif !important;
+  font-weight: 400 !important; }
+
+/* line 35, scss/_typography.scss */
+h1, h2, h3, h4, h4, h5, h6,
+ul, ol, dl,
+p, blockquote {
+  margin-top: 0;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  margin-bottom: 0; }
+
+/* line 44, scss/_typography.scss */
+h1, h2, h3, h4, h4, h5, h6 {
+  /*     font-family: 'Lora-Bold', serif;
+   */ }
+
+/* line 48, scss/_typography.scss */
+h2 {
+  font-size: 42px;
+  line-height: 52px;
+  font-family: 'Lora-Regular', serif;
+  text-transform: uppercase;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  white-space: pre-line; }
+
+/* line 58, scss/_typography.scss */
+h3 {
+  font-size: 32px;
+  line-height: 42px;
+  font-family: 'Lora-Regular', serif;
+  text-transform: uppercase;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  white-space: pre-line; }
+
+/* line 68, scss/_typography.scss */
+h4 {
+  font-size: 28px;
+  line-height: 32px;
+  font-family: 'Lora-Regular', serif;
+  text-transform: uppercase;
+  white-space: pre-line; }
+
+/* line 76, scss/_typography.scss */
+h5 {
+  font-size: 22px;
+  line-height: 24px;
+  font-family: 'Lora-Regular', serif;
+  text-transform: uppercase;
+  white-space: pre-line; }
+
+/* line 84, scss/_typography.scss */
+p::selection {
+  background: #108880;
+  color: #ffffff; }
+
+/* line 89, scss/_typography.scss */
+a:hover {
+  color: #524f4c;
+  text-decoration: none; }
+
+/* line 96, scss/_typography.scss */
+a {
+  color: #108880;
+  text-decoration: none; }
+  /* line 100, scss/_typography.scss */
+  a:hover, a:focus {
+    color: #87827d;
+    text-decoration: none; }
+
+/* line 107, scss/_typography.scss */
+blockquote {
+  font-family: 'Seaweed Script', cursive;
+  font-size: 42px;
+  line-height: 48px;
+  letter-spacing: 2px;
+  color: #b8b5b2;
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 0px;
+  margin-left: 40px;
+  margin-right: 40px;
+  white-space: pre-line;
+  border-left: none; }
+
+/* line 122, scss/_typography.scss */
+.space {
+  padding-top: 60px;
+  padding-bottom: 30px; }
+
+/* line 127, scss/_typography.scss */
+.sectionTitle {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Lora-Regular', serif;
+  font-size: 30px;
+  line-height: 36px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0px 0 20px 0;
+  white-space: pre-line;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.6); }
+
+/* line 142, scss/_typography.scss */
+.sectionTitleBlog {
+  padding-top: 5px;
+  padding-bottom: 0px;
+  font-size: 16px;
+  line-height: 20px; }
+
+/* line 149, scss/_typography.scss */
+.text {
+  font-family: 'Source Sans Pro', serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: left;
+  color: #524f4c;
+  padding-bottom: 15px; }
+
+/* line 159, scss/_typography.scss */
+.text-bold {
+  font-weight: 600; }
+
+/* line 163, scss/_typography.scss */
+.text-date-tarifas {
+  font-family: 'Source Sans Pro', serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: left;
+  color: #524f4c;
+  padding-bottom: 15px; }
+
+/* line 173, scss/_typography.scss */
+.text-price-tarifas {
+  font-size: 16px;
+  font-weight: 600;
+  padding-right: 20px; }
+
+/* line 179, scss/_typography.scss */
+.person_tarifas {
+  margin-left: -11px; }
+
+/* line 183, scss/_typography.scss */
+.date {
+  font-family: 'Source Sans Pro', serif;
+  font-weight: 400;
+  font-size: 18px;
+  padding-top: 10px;
+  color: #b8b5b2; }
+
+/* line 191, scss/_typography.scss */
+.tag {
+  font-family: 'Source Sans Pro', serif;
+  font-weight: 400;
+  font-size: 16px;
+  padding-top: 10px;
+  color: #b8b5b2;
+  padding-left: -15px; }
+
+/* line 200, scss/_typography.scss */
+.tag-bg {
+  font-family: 'Source Sans Pro', serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 40px;
+  margin-left: 10px;
+  padding: 2px 10px;
+  color: #ffffff;
+  padding-left: -15px;
+  background: #b8b5b2;
+  border-radius: 4px;
+  transition: 0.3s ease; }
+
+/* line 214, scss/_typography.scss */
+.tag-bg-share {
+  padding-top: 24px; }
+
+/* line 218, scss/_typography.scss */
+.tag-bg:hover {
+  color: #ffffff;
+  background: #524f4c; }
+
+/* line 223, scss/_typography.scss */
+.tag-bg-secondary:hover {
+  color: #524f4c;
+  background: #ffffff; }
+
+/* line 228, scss/_typography.scss */
+.italic {
+  font-style: italic; }
+
+/* line 233, scss/_typography.scss */
+.bold {
+  font-weight: 600; }
+
+/* line 237, scss/_typography.scss */
+.underline {
+  text-decoration: underline; }
+
+/* line 241, scss/_typography.scss */
+.pre-line {
+  white-space: pre-line; }
+
+/* line 246, scss/_typography.scss */
+.text-lite {
+  font-family: 'Source Sans Pro', serif;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  color: #524f4c; }
+
+/* line 255, scss/_typography.scss */
+.primary {
+  color: #108880; }
+
+/* line 259, scss/_typography.scss */
+.primary-bg {
+  background: #108880; }
+
+/* line 263, scss/_typography.scss */
+.secondary {
+  color: #524f4c; }
+
+/* line 267, scss/_typography.scss */
+.third {
+  color: #7b4e2d; }
+
+/* line 271, scss/_typography.scss */
+.white-text {
+  color: #ffffff !important; }
+
+/* line 275, scss/_typography.scss */
+.center {
+  text-align: center; }
+
+/* line 279, scss/_typography.scss */
+.left {
+  text-align: left; }
+
+/* line 283, scss/_typography.scss */
+.right {
+  text-align: right; }
+
+/* line 287, scss/_typography.scss */
+.padding_top {
+  padding-top: 40px; }
+
+/* line 291, scss/_typography.scss */
+.padding_top_20 {
+  padding-top: 20px; }
+
+/* line 295, scss/_typography.scss */
+.padding_top_60 {
+  padding-top: 60px; }
+
+/* line 299, scss/_typography.scss */
+.padding_top_aside {
+  padding-top: 40px; }
+
+/* line 303, scss/_typography.scss */
+.padding_bottom {
+  padding-bottom: 40px; }
+
+/* line 307, scss/_typography.scss */
+.maggin-top_40 {
+  margin-top: 40px; }
+
+/* line 311, scss/_typography.scss */
+.maggin-bottom_40 {
+  margin-bottom: 40px; }
+
+/* line 315, scss/_typography.scss */
+.maggin-bottom_galeria {
+  margin-bottom: 40px; }
+
+/* line 319, scss/_typography.scss */
+.no-padding {
+  padding: 0; }
+
+/* line 323, scss/_typography.scss */
+.no-padding-bottom {
+  padding-bottom: 0px; }
+
+/* line 327, scss/_typography.scss */
+.no_maggin-bottom {
+  margin-bottom: 0; }
+
+/* line 331, scss/_typography.scss */
+.no-padding-left {
+  padding-left: 0px; }
+
+/* line 335, scss/_typography.scss */
+.map {
+  height: 300px; }
+
+/* line 339, scss/_typography.scss */
+.margin-row-2 {
+  margin-top: -700px; }
+
+/* line 343, scss/_typography.scss */
+.margin-footer {
+  margin-bottom: 700px; }
+
+@media (min-width: 480px) {
+  /* line 352, scss/_typography.scss */
+  .sectionTitle {
+    font-size: 42px;
+    line-height: 42px; }
+
+  /* line 357, scss/_typography.scss */
+  .sectionTitleBlog {
+    padding-top: 20px;
+    padding-bottom: 0px;
+    font-size: 32px;
+    line-height: 32px; } }
+@media (min-width: 768px) {
+  /* line 367, scss/_typography.scss */
+  .sectionTitle {
+    font-size: 52px;
+    line-height: 60px; }
+
+  /* line 372, scss/_typography.scss */
+  .sectionTitleBlog {
+    padding-top: 0;
+    font-size: 40px;
+    line-height: 50px;
+    white-space: pre-line; }
+
+  /* line 379, scss/_typography.scss */
+  .text-price-tarifas {
+    font-size: 18px;
+    padding-right: 20px; }
+
+  /* line 384, scss/_typography.scss */
+  .map {
+    height: 600px; }
+
+  /* line 388, scss/_typography.scss */
+  .margin-row-2 {
+    margin-top: -450px; }
+
+  /* line 392, scss/_typography.scss */
+  .maggin-bottom_galeria {
+    margin-bottom: 0px; }
+
+  /* line 396, scss/_typography.scss */
+  .margin-footer {
+    margin-bottom: 400px; } }
+@media (min-width: 992px) {
+  /* line 404, scss/_typography.scss */
+  .sectionTitle {
+    font-size: 60px;
+    line-height: 66px; }
+
+  /* line 409, scss/_typography.scss */
+  .padding_top.blog {
+    padding-top: 60px; }
+
+  /* line 413, scss/_typography.scss */
+  .padding_top_aside {
+    padding-top: 0px; }
+
+  /* line 417, scss/_typography.scss */
+  .text {
+    font-size: 18px;
+    line-height: 28px; }
+
+  /* line 422, scss/_typography.scss */
+  .text-price-tarifas {
+    font-size: 22px; }
+
+  /* line 426, scss/_typography.scss */
+  .date {
+    font-size: 22px; }
+
+  /* line 430, scss/_typography.scss */
+  .tag {
+    font-size: 18px; }
+
+  /* line 434, scss/_typography.scss */
+  .margin-row-2 {
+    margin-top: -250px; }
+
+  /* line 438, scss/_typography.scss */
+  .margin-footer {
+    margin-bottom: 250px; } }
+@media (min-width: 1500px) {
+  /* line 445, scss/_typography.scss */
+  .sectionTitle {
+    font-size: 66px;
+    line-height: 66px; }
+
+  /* line 450, scss/_typography.scss */
+  .text {
+    font-size: 20px;
+    line-height: 32px; }
+
+  /* line 455, scss/_typography.scss */
+  .text-price-tarifas {
+    font-size: 22px; }
+
+  /* line 459, scss/_typography.scss */
+  .margin-row-2 {
+    margin-top: -350px; } }
+/* line 1, scss/_form.scss */
+.input-field label {
+  font-family: 'Source Sans Pro', serif;
+  font-weight: 400; }
+
+/* line 6, scss/_form.scss */
+.datepicker:hover,
+.select-wrapper input.select-dropdown:hover,
+input[type=text]:hover,
+input[type=email]:hover {
+  border-bottom: 1px solid #108880;
+  box-shadow: 0 1px 0 0 #108880; }
+
+/* label color */
+/* line 15, scss/_form.scss */
+.input[type=text] {
+  color: #108880; }
+
+/* label color */
+/* line 21, scss/_form.scss */
+.input-field label {
+  color: #9e9e9e; }
+
+/* label focus color */
+/* line 27, scss/_form.scss */
+input:not([type]),
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=url],
+input[type=time],
+input[type=date],
+input[type=datetime],
+input[type=datetime-local],
+input[type=tel],
+input[type=number],
+input[type=search],
+textarea.materialize-textarea {
+  color: #524f4c; }
+
+/* label underline focus color */
+/* line 44, scss/_form.scss */
+.input-field input[type=text]:focus,
+.input-field input[type=email]:focus {
+  border-bottom: 1px solid #108880;
+  box-shadow: 0 1px 0 0 #108880; }
+
+/* valid color */
+/* line 52, scss/_form.scss */
+.input-field input[type=text].valid,
+.input-field input[type=email].valid,
+.input-field input[type=date].valid,
+.input-field input[type=datetime].valid,
+.input-field input[type=datetime-local].valid,
+.input-field input[type=tel].valid,
+.input-field input[type=number].valid,
+.input-field input[type=search].valid {
+  border-color: #108880;
+  border-bottom: 1px solid #108880;
+  box-shadow: 0 1px 0 0 #108880; }
+
+/* invalid color */
+/* line 66, scss/_form.scss */
+.input-field input[type=text].invalid {
+  border-bottom: 1px solid red;
+  box-shadow: 0 1px 0 0 red; }
+
+/* icon prefix focus color */
+/* line 72, scss/_form.scss */
+.input-field .prefix.active {
+  color: yellow; }
+
+/* line 76, scss/_form.scss */
+.picker__input.picker__input--active {
+  border-color: #108880;
+  border-bottom: 1px solid #108880;
+  box-shadow: 0 1px 0 0 #108880; }
+
+/* line 1, scss/_layout.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* line 7, scss/_layout.scss */
+.wrapper {
+  widows: 100%;
+  overflow: hidden; }
+
+/* line 12, scss/_layout.scss */
+.container {
+  /* padding-right: 15px; */
+  /* padding-left: 15px; */
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0px;
+  padding-left: 0px; }
+
+/* line 21, scss/_layout.scss */
+.cardLineLeft {
+  display: inline-block;
+  width: 50%;
+  margin-left: 0%;
+  border-bottom: 1px solid #9f9c98; }
+
+/* line 28, scss/_layout.scss */
+.width-25 {
+  width: 25%; }
+
+/* line 32, scss/_layout.scss */
+.img {
+  width: 100%; }
+
+/* line 36, scss/_layout.scss */
+.shadow {
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.3); }
+
+/* line 40, scss/_layout.scss */
+.map {
+  margin-top: 50px; }
+
+/* line 44, scss/_layout.scss */
+.margin_col {
+  margin-bottom: 30px; }
+
+/* line 48, scss/_layout.scss */
+.margin_col:nth-child(1) {
+  margin-top: -50px; }
+
+/* line 52, scss/_layout.scss */
+.padding_section {
+  padding-top: 60px;
+  padding-bottom: 60px; }
+
+/* line 57, scss/_layout.scss */
+.padding_top_small {
+  padding-top: 10px; }
+
+@media (min-width: 768px) {
+  /* line 63, scss/_layout.scss */
+  .container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 32px;
+    padding-left: 32px; } }
+@media (min-width: 992px) {
+  /* line 74, scss/_layout.scss */
+  .margin_col:nth-child(1) {
+    margin-top: -70px; }
+
+  /* line 78, scss/_layout.scss */
+  .margin_col {
+    margin-top: -70px;
+    margin-bottom: 0px; } }
+@media (min-width: 1200px) {
+  /* line 87, scss/_layout.scss */
+  .margin_col:nth-child(1) {
+    margin-top: -100px; }
+
+  /* line 91, scss/_layout.scss */
+  .margin_col {
+    margin-top: -100px; } }
+@media (min-width: 1500px) {
+  /* line 98, scss/_layout.scss */
+  .container {
+    min-width: 1436px;
+    padding-right: 32px;
+    padding-left: 32px; } }
+/* line 1, scss/_header.scss */
+.containerHeader {
+  background: #ffffff;
+  max-width: 100%;
+  z-index: 1;
+  position: relative; }
+
+/* line 8, scss/_header.scss */
+.logoContainer {
+  text-align: center; }
+
+/* line 12, scss/_header.scss */
+.logoImg {
+  width: 157px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 2em; }
+
+/* line 19, scss/_header.scss */
+.tagline {
+  font-family: 'Lora-Bold', serif;
+  font-size: 9px;
+  color: #524f4c;
+  padding-top: 5px;
+  text-transform: uppercase;
+  text-align: center; }
+
+@media (min-width: 992px) {
+  /* line 29, scss/_header.scss */
+  .tagline {
+    font-size: 11px;
+    padding-top: 12px; } }
+/* line 36, scss/_header.scss */
+.idiomaContainer {
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 8px;
+  font-family: 'Lora-BoldItalic', serif;
+  font-size: 12px;
+  color: #108880;
+  vertical-align: middle;
+  background: #ffffff !important;
+  transition: 0.3s ease;
+  box-shadow: none; }
+
+/* line 49, scss/_header.scss */
+.idiomaContainer:hover {
+  box-shadow: none; }
+
+/* line 53, scss/_header.scss */
+.dropdown-menu > li > a {
+  color: #108880; }
+
+/* line 57, scss/_header.scss */
+.dropdown-menu > li > a:hover {
+  color: #524f4c; }
+
+/* line 61, scss/_header.scss */
+.idiomaToggle {
+  font-size: 16px;
+  vertical-align: middle; }
+
+@media (min-width: 992px) {
+  /* line 67, scss/_header.scss */
+  .idiomaContainer {
+    font-size: 16px; }
+
+  /* line 70, scss/_header.scss */
+  .idiomaToggle {
+    font-size: 22px;
+    line-height: 10px; } }
+/* line 77, scss/_header.scss */
+.menuToggleOpen {
+  display: block;
+  margin-top: 20px;
+  text-align: right; }
+
+/* line 83, scss/_header.scss */
+#menuToggle {
+  margin-top: -5px;
+  margin-right: -35px;
+  width: 100px;
+  height: 40px;
+  display: block;
+  display: block;
+  float: right; }
+
+/* line 93, scss/_header.scss */
+.hamburgare {
+  height: 40px;
+  width: 40px;
+  display: block;
+  float: right; }
+
+/* line 100, scss/_header.scss */
+.hamburgare:before {
+  font-family: 'Material Icons';
+  font-size: 32px;
+  content: "&#xE5D2";
+  content: "menu";
+  display: block;
+  margin-top: -2px;
+  text-align: right;
+  color: #108880; }
+
+/* line 112, scss/_header.scss */
+.hamburgareOpen {
+  height: 40px;
+  width: 40px;
+  display: block;
+  float: right; }
+
+/* line 119, scss/_header.scss */
+.hamburgareOpen:before {
+  font-family: 'Material Icons';
+  font-size: 32px;
+  content: "&#xE14C";
+  content: "clear";
+  display: block;
+  margin-top: -2px;
+  text-align: right;
+  color: #108880; }
+
+/* line 130, scss/_header.scss */
+.menuText {
+  display: none;
+  margin-top: 12px;
+  text-align: right;
+  font-family: 'Lora-BoldItalic', serif;
+  font-size: 12px;
+  color: #108880;
+  text-transform: uppercase; }
+
+@media (min-width: 768px) {
+  /* line 143, scss/_header.scss */
+  .menuText {
+    display: block; }
+
+  /* line 147, scss/_header.scss */
+  #menuToggle {
+    margin-top: -5px;
+    margin-right: -10px; } }
+@media (min-width: 992px) {
+  /* line 156, scss/_header.scss */
+  .menuToggleOpen {
+    display: block; } }
+/*
+   Menu
+*/
+/* line 166, scss/_header.scss */
+nav {
+  display: none;
+  width: 100%;
+  margin: 10px auto; }
+
+/* line 172, scss/_header.scss */
+nav > ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0 0px; }
+
+/* line 179, scss/_header.scss */
+nav > ul > li {
+  padding: 0em;
+  text-align: center;
+  padding: 13px 10px;
+  border-bottom: 1px solid #f5f5f4;
+  transition: 0.3s ease; }
+
+/* line 187, scss/_header.scss */
+nav > ul > li:hover {
+  background: #f9f8f5; }
+
+/* line 191, scss/_header.scss */
+nav > ul > li:active {
+  background: #f9f8f5; }
+
+/* line 195, scss/_header.scss */
+nav ul > li > a {
+  font-family: 'Lora-Bold', serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: 0.3s ease; }
+
+/* line 202, scss/_header.scss */
+nav ul > li > a:link {
+  color: #108880; }
+
+/* line 206, scss/_header.scss */
+nav ul > li > a:visited {
+  color: #108880; }
+
+/* line 210, scss/_header.scss */
+nav > ul > li > a:hover {
+  color: #524f4c;
+  text-decoration: none;
+  font-family: 'Lora-Bold', serif; }
+
+/* line 216, scss/_header.scss */
+nav > ul > li > a.active {
+  color: #524f4c; }
+
+@media screen and (min-width: 768px) {
+  /* line 224, scss/_header.scss */
+  nav {
+    display: block; }
+
+  /* line 228, scss/_header.scss */
+  nav > ul {
+    display: block;
+    float: left;
+    box-sizing: border-box; }
+
+  /* line 234, scss/_header.scss */
+  nav > ul > li {
+    float: left;
+    width: 50%;
+    box-sizing: border-box; }
+
+  /* line 240, scss/_header.scss */
+  nav > ul > li:nth-child(even) {
+    border-left: 1px solid #f5f5f4; } }
+@media screen and (max-width: 992px) {
+  /* line 248, scss/_header.scss */
+  nav > ul {
+    flex-direction: column; } }
+@media (min-width: 992px) {
+  /* line 255, scss/_header.scss */
+  nav {
+    margin: 50px auto; }
+
+  /* line 259, scss/_header.scss */
+  nav > ul {
+    float: none;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0 0px; }
+
+  /* line 268, scss/_header.scss */
+  nav > ul > li {
+    float: none;
+    width: auto;
+    text-align: center;
+    padding: 13px 10px;
+    border-bottom: 1px solid #f9f8f5;
+    transition: 0.3s ease;
+    border-bottom: 0px solid rgba(0, 0, 0, 0.1); }
+
+  /* line 278, scss/_header.scss */
+  nav > ul > li:nth-child(even) {
+    border-left: 0px solid #f9f8f5; }
+
+  /* line 282, scss/_header.scss */
+  nav > ul > li:hover {
+    background: #ffffff; }
+
+  /* line 286, scss/_header.scss */
+  nav > ul > li > a {
+    font-size: 14px; } }
+@media (min-width: 1500px) {
+  /* line 293, scss/_header.scss */
+  nav > ul > li > a {
+    font-size: 16px; } }
+/* line 303, scss/_header.scss */
+.loggin {
+  background-color: #108880;
+  transition: 0.3s ease; }
+
+/* line 308, scss/_header.scss */
+.loggin:hover {
+  background-color: #524f4c; }
+
+/* line 313, scss/_header.scss */
+.loggin > a {
+  font-family: 'Lora-Bold', serif;
+  font-size: 14px;
+  color: white !important;
+  text-transform: none;
+  padding: 0 10px; }
+
+/* line 1, scss/_slider.scss */
+.containerSlider {
+  z-index: 2;
+  margin: -50px 0 0 0; }
+
+/* line 7, scss/_slider.scss */
+.carousel-caption {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0%;
+  top: 35%; }
+
+/* line 15, scss/_slider.scss */
+.carousel-indicators {
+  display: none;
+  height: 0;
+  margin-left: 40%;
+  top: 50%; }
+
+/* line 22, scss/_slider.scss */
+.slideTitle {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Lora-Regular', serif;
+  font-size: 30px;
+  line-height: 36px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0px 0 20px 0;
+  white-space: pre-line;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.6); }
+
+/* line 37, scss/_slider.scss */
+.slideText {
+  display: none;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Source Sans Pro', serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-align: center;
+  padding: 0px 0 20px 0;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.6); }
+
+/* line 52, scss/_slider.scss */
+.carousel-indicators-numbers {
+  position: absolute;
+  z-index: 99999;
+  top: 50%; }
+  /* line 56, scss/_slider.scss */
+  .carousel-indicators-numbers li {
+    display: none;
+    text-indent: 0;
+    font-family: 'Lora-Regular', serif;
+    font-size: 24px;
+    margin: 0 2px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 0%;
+    line-height: 30px;
+    color: #108880;
+    background-color: #ffffff;
+    transition: all 0.25s ease;
+    cursor: default; }
+    /* line 71, scss/_slider.scss */
+    .carousel-indicators-numbers li.active, .carousel-indicators-numbers li:hover {
+      display: block;
+      margin: 0 2px;
+      width: 61px;
+      height: 52px;
+      padding-top: 10px;
+      background-color: #108880;
+      color: #ffffff; }
+
+@media (min-width: 480px) {
+  /* line 84, scss/_slider.scss */
+  .carousel-caption {
+    top: 20%; }
+
+  /* line 88, scss/_slider.scss */
+  .slideTitle {
+    font-family: 'Lora-Regular', serif;
+    font-size: 42px;
+    line-height: 42px; }
+
+  /* line 94, scss/_slider.scss */
+  .slideText {
+    display: block;
+    font-size: 18px;
+    line-height: 24px; } }
+@media (min-width: 768px) {
+  /* line 103, scss/_slider.scss */
+  .carousel-caption {
+    top: 30%; }
+
+  /* line 107, scss/_slider.scss */
+  .carousel-indicators {
+    display: block;
+    margin-left: 42%;
+    top: 50%; }
+    /* line 112, scss/_slider.scss */
+    .carousel-indicators li.active, .carousel-indicators li:hover {
+      display: block;
+      width: 100px;
+      height: 52px; }
+
+  /* line 120, scss/_slider.scss */
+  .slideTitle {
+    font-size: 52px;
+    line-height: 60px; }
+
+  /* line 125, scss/_slider.scss */
+  .slideText {
+    font-size: 28px;
+    line-height: 36px; } }
+@media (min-width: 992px) {
+  /* line 134, scss/_slider.scss */
+  .carousel-caption {
+    top: 35%; }
+
+  /* line 138, scss/_slider.scss */
+  .carousel-indicators {
+    display: block;
+    margin-left: 40%;
+    top: 50%; }
+    /* line 143, scss/_slider.scss */
+    .carousel-indicators li.active, .carousel-indicators li:hover {
+      display: block;
+      width: 152px;
+      height: 52px; }
+
+  /* line 151, scss/_slider.scss */
+  .slideTitle {
+    font-size: 60px;
+    line-height: 66px; } }
+@media (min-width: 1500px) {
+  /* line 160, scss/_slider.scss */
+  .carousel-caption {
+    top: 40%; }
+
+  /* line 164, scss/_slider.scss */
+  .slideTitle {
+    font-size: 66px;
+    line-height: 66px; } }
+/* line 5, scss/_intro.scss */
+.introTitle {
+  font-size: 32px;
+  line-height: 42px;
+  text-align: center;
+  font-family: 'Lora-Regular', serif;
+  color: #7b4e2d;
+  text-transform: uppercase;
+  padding-bottom: 20px; }
+
+/* line 15, scss/_intro.scss */
+.card_Wrapper {
+  padding-top: 20px; }
+
+/* line 19, scss/_intro.scss */
+.cardContent {
+  height: auto; }
+
+/* line 23, scss/_intro.scss */
+.cardImage {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: -280px;
+  width: 280px;
+  height: 280px;
+  overflow: hidden;
+  border: 4px solid #ffffff;
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.3);
+  margin-bottom: 40px; }
+
+/* line 36, scss/_intro.scss */
+.card2 {
+  top: -220px; }
+
+/* line 40, scss/_intro.scss */
+.card3 {
+  top: -440px; }
+
+/* line 44, scss/_intro.scss */
+.cardShadow {
+  position: relative;
+  left: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #d1cdc2;
+  width: 280px;
+  height: 280px;
+  border: 4px solid #ffffff;
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.3);
+  transform: rotate(5deg); }
+
+/* line 58, scss/_intro.scss */
+.cardShadowTwo {
+  transform: rotate(-5deg); }
+
+/* line 62, scss/_intro.scss */
+.contentCardInfo {
+  display: block;
+  position: relative;
+  top: -280px; }
+
+/* line 68, scss/_intro.scss */
+.cardTitle {
+  text-align: center;
+  font-family: 'Lora-Regular', serif;
+  font-size: 28px;
+  line-height: 32px;
+  color: #7b4e2d;
+  text-transform: uppercase;
+  white-space: pre-line; }
+
+/* line 78, scss/_intro.scss */
+.cardLine {
+  display: inline-block;
+  width: 50%;
+  margin-left: 25%;
+  border-bottom: 1px solid #9f9c98; }
+
+/* line 85, scss/_intro.scss */
+.cardText {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+@media (min-width: 768px) {
+  /* line 92, scss/_intro.scss */
+  .introTitle {
+    font-size: 32px;
+    line-height: 42px;
+    padding-bottom: 40px; }
+
+  /* line 98, scss/_intro.scss */
+  .card2 {
+    top: 0px; }
+
+  /* line 102, scss/_intro.scss */
+  .card3 {
+    top: -220px; }
+
+  /* line 106, scss/_intro.scss */
+  .cardShadow {
+    display: block; } }
+@media (min-width: 992px) {
+  /* line 115, scss/_intro.scss */
+  .card3 {
+    top: 0px;
+    left: 0%; } }
+@media (min-width: 1500px) {
+  /* line 135, scss/_intro.scss */
+  .cardImage {
+    width: 360px;
+    height: 360px;
+    top: -360px; }
+
+  /* line 141, scss/_intro.scss */
+  .cardShadow {
+    width: 360px;
+    height: 360px; }
+
+  /* line 147, scss/_intro.scss */
+  .contentCardInfo {
+    top: -360px; } }
+/* line 1, scss/_formularioevento.scss */
+.containerFormulario {
+  z-index: 1;
+  position: relative;
+  height: auto;
+  top: -720px;
+  padding-top: 50px; }
+
+/* line 14, scss/_formularioevento.scss */
+.introFormulario {
+  font-size: 32px;
+  line-height: 42px;
+  text-align: left;
+  font-family: 'Lora-Regular', serif;
+  color: #108880;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  white-space: pre-line; }
+
+/* line 27, scss/_formularioevento.scss */
+.phoneCall {
+  position: relative;
+  margin-top: -100px;
+  display: block;
+  width: 274px;
+  height: 125px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #108880;
+  padding: 20px 0;
+  text-align: center;
+  transition: 0.3s ease; }
+
+/* line 41, scss/_formularioevento.scss */
+.phoneCall:hover {
+  background: #524f4c; }
+
+/* line 45, scss/_formularioevento.scss */
+.textCall {
+  font-family: 'Source Sans Pro', serif;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 0; }
+
+/* line 52, scss/_formularioevento.scss */
+.phoneNummer {
+  font-family: 'Source Sans Pro', serif;
+  font-weight: 900;
+  color: #ffffff;
+  font-size: 46px;
+  padding-bottom: 20px; }
+
+/* line 60, scss/_formularioevento.scss */
+.phoneNummer:hover {
+  color: #ffffff;
+  text-decoration: none; }
+
+/* line 65, scss/_formularioevento.scss */
+.papa {
+  margin-top: 100px; }
+
+@media (min-width: 480px) {
+  /* line 80, scss/_formularioevento.scss */
+  .phoneCall {
+    margin-top: -140px; } }
+@media (min-width: 768px) {
+  /* line 89, scss/_formularioevento.scss */
+  .containerFormulario {
+    top: -480px; } }
+@media (min-width: 992px) {
+  /* line 96, scss/_formularioevento.scss */
+  .containerFormulario {
+    top: -260px; } }
+@media (min-width: 1200px) {
+  /* line 103, scss/_formularioevento.scss */
+  .containerFormulario {
+    top: -260px; } }
+@media (min-width: 1500px) {
+  /* line 110, scss/_formularioevento.scss */
+  .containerFormulario {
+    top: -340px; } }
+/* line 1, scss/_formulariobungalow.scss */
+.containerFormularioBungalow {
+  z-index: 1;
+  position: relative;
+  height: auto;
+  padding-top: 40px;
+  padding-bottom: 70px;
+  top: -700px;
+  background: #ebebeb; }
+
+/* line 11, scss/_formulariobungalow.scss */
+.containerFormularioBungalowSubpage {
+  z-index: 1;
+  height: auto;
+  padding-top: 40px;
+  padding-bottom: 70px;
+  background: #ebebeb; }
+
+/* line 19, scss/_formulariobungalow.scss */
+.cardImageBungalow {
+  margin-left: auto;
+  margin-right: auto;
+  border: 4px solid #ffffff;
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.3);
+  margin-top: 0px; }
+
+/* line 27, scss/_formulariobungalow.scss */
+.datepicker {
+  height: 3rem !important; }
+
+/* line 31, scss/_formulariobungalow.scss */
+.select-wrapper span.caret {
+  color: #9e9e9e;
+  padding-top: 5px;
+  right: 10px; }
+
+@media (min-width: 768px) {
+  /* line 40, scss/_formulariobungalow.scss */
+  .containerFormularioBungalow {
+    top: -450px; } }
+@media (min-width: 992px) {
+  /* line 48, scss/_formulariobungalow.scss */
+  .containerFormularioBungalow {
+    top: -250px; }
+
+  /* line 51, scss/_formulariobungalow.scss */
+  .cardImageBungalow {
+    margin-top: 100px;
+    margin-bottom: 80px; } }
+@media (min-width: 1200px) {
+  /* line 60, scss/_formulariobungalow.scss */
+  .cardImageBungalow {
+    margin-bottom: 50px; } }
+/* line 1, scss/_excursiones.scss */
+.containerExcursiones {
+  z-index: 1;
+  position: relative;
+  height: auto;
+  top: -700px;
+  padding-top: 40px; }
+
+/* line 9, scss/_excursiones.scss */
+.padding {
+  padding: 0; }
+
+/* line 13, scss/_excursiones.scss */
+.excursion_row {
+  margin-top: 40px; }
+
+/* line 17, scss/_excursiones.scss */
+.excursion {
+  margin-top: 40px; }
+
+/* line 21, scss/_excursiones.scss */
+.round_img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 80%;
+  margin-top: -90%;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); }
+
+/* line 33, scss/_excursiones.scss */
+.flower_img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%; }
+
+@media (min-width: 768px) {
+  /* line 47, scss/_excursiones.scss */
+  .containerExcursiones {
+    top: -450px; }
+
+  /* line 51, scss/_excursiones.scss */
+  .excursion_row {
+    margin-top: 60px; }
+
+  /* line 55, scss/_excursiones.scss */
+  .excursion {
+    margin-top: 40px; } }
+@media (min-width: 992px) {
+  /* line 63, scss/_excursiones.scss */
+  .containerExcursiones {
+    top: -250px; }
+
+  /* line 67, scss/_excursiones.scss */
+  .excursion {
+    margin-top: 0px; } }
+@media (min-width: 1500px) {
+  /* line 81, scss/_excursiones.scss */
+  .round_img {
+    margin-top: -200px; } }
+/* line 1, scss/_footer.scss */
+.footer  {
+  position: relative;
+  background: #524f4c; }
+
+/* line 6, scss/_footer.scss */
+.container-footer {
+  width: 100%;
+  position: absolute;
+  margin-top: -650px;
+  background: #524f4c;
+  padding-bottom: 0px; }
+
+/* line 15, scss/_footer.scss */
+.container-footer-Subpage {
+  width: 100%;
+  position: absolute;
+  margin-top: 0px;
+  background: #524f4c;
+  padding-bottom: 0px; }
+
+/* line 24, scss/_footer.scss */
+.copy_container {
+  margin-top: 60px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1); }
+
+/* line 31, scss/_footer.scss */
+.copy {
+  font-size: 20px;
+  line-height: 35px;
+  padding-top: 0px;
+  color: #ffffff; }
+
+/* line 38, scss/_footer.scss */
+.footer-div {
+  height: 220px; }
+
+/* line 42, scss/_footer.scss */
+.footer-text {
+  font-size: 22px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #ffffff; }
+
+/* line 49, scss/_footer.scss */
+.footer-title {
+  padding-top: 40px; }
+
+/* line 53, scss/_footer.scss */
+.footer-phone {
+  padding-top: 0px; }
+
+/* line 57, scss/_footer.scss */
+.footer-phone:hover {
+  color: #ffffff;
+  text-decoration: none; }
+
+/* line 62, scss/_footer.scss */
+.logo-roig {
+  width: 200px; }
+
+/* line 66, scss/_footer.scss */
+.tripadvisorStar {
+  margin-top: 20px; }
+
+/* line 70, scss/_footer.scss */
+.tripadvisor-Opiniones {
+  display: block;
+  color: #ffffff;
+  margin-top: 10px; }
+
+/* line 76, scss/_footer.scss */
+.tripadvisorLogo {
+  width: 208px;
+  margin-top: 0px; }
+
+/* line 81, scss/_footer.scss */
+.social-icon {
+  font-size: 52px;
+  padding-right: 20px;
+  color: #ffffff; }
+
+@media (min-width: 768px) {
+  /* line 91, scss/_footer.scss */
+  .container-footer {
+    margin-top: -350px; } }
+@media (min-width: 992px) {
+  /* line 99, scss/_footer.scss */
+  .container-footer {
+    margin-top: -150px; } }
+@media (min-width: 1200px) {
+  /* line 107, scss/_footer.scss */
+  .container-footer {
+    margin-top: -150px; } }
+/* line 1, scss/_agroturismo.scss */
+.containerDescrition {
+  padding-bottom: 60px; }
+
+/* line 5, scss/_agroturismo.scss */
+.aside {
+  padding-top: 42px; }
+
+/* line 9, scss/_agroturismo.scss */
+.icon_materialize {
+  font-size: 36px;
+  vertical-align: middle;
+  color: #87827d; }
+
+/* line 15, scss/_agroturismo.scss */
+.icon_materialize-small {
+  font-size: 24px;
+  vertical-align: middle;
+  color: #b8b5b2;
+  transition: 0.3s ease; }
+
+/* line 22, scss/_agroturismo.scss */
+.icon_materialize-small:hover {
+  color: #524f4c; }
+
+/* line 26, scss/_agroturismo.scss */
+.moon {
+  margin-left: 20px;
+  transform: rotate(150deg);
+  margin-bottom: -10px; }
+
+/* line 32, scss/_agroturismo.scss */
+.middle {
+  vertical-align: middle; }
+
+/* line 36, scss/_agroturismo.scss */
+.lista {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #b8b5b2; }
+
+/* Desplegable casas */
+/* line 49, scss/_agroturismo.scss */
+section .slider-block {
+  padding: 2.525em 0; }
+
+/* line 54, scss/_agroturismo.scss */
+.section-casas {
+  margin-top: -80px;
+  margin-bottom: 0px; }
+
+/* line 59, scss/_agroturismo.scss */
+.w4 {
+  position: relative;
+  box-sizing: border-box; }
+
+/* line 64, scss/_agroturismo.scss */
+.w4.active {
+  min-height: 1350px; }
+
+/* line 68, scss/_agroturismo.scss */
+.seccion-sectores {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0; }
+
+/* line 76, scss/_agroturismo.scss */
+.seccion-sectores div li.casaDesplegar {
+  display: inline-block;
+  width: 25%;
+  position: relative; }
+
+/* line 83, scss/_agroturismo.scss */
+.seccion-sectores div li.casaDesplegar {
+  display: block;
+  width: 100%;
+  border-right: none;
+  margin-bottom: 50px; }
+
+/* line 91, scss/_agroturismo.scss */
+.seccion-sectores .w4 li.casaDesplegar.active:before {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 25px solid #e9e8e7;
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  z-index: 4;
+  transform: translateX(-50%); }
+
+/* line 106, scss/_agroturismo.scss */
+.logistica .content.active {
+  max-height: auto;
+  height: auto; }
+
+/* line 111, scss/_agroturismo.scss */
+.content {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  z-index: 10;
+  position: absolute;
+  left: 0%;
+  display: none;
+  width: 120%;
+  transition: all .5s;
+  background-color: #e9e8e7; }
+
+/* line 123, scss/_agroturismo.scss */
+.content.active {
+  transition: all .5s;
+  min-height: 1350px;
+  margin-bottom: 100px;
+  left: -20%;
+  padding-left: 20%;
+  padding-right: 20%;
+  width: 142%;
+  display: block;
+  opacity: 1;
+  position: relative; }
+
+/* line 137, scss/_agroturismo.scss */
+.desplegable {
+  padding-left: 0;
+  padding-right: 0; }
+
+/* line 142, scss/_agroturismo.scss */
+.casa-form {
+  padding-top: 50px; }
+
+/* line 146, scss/_agroturismo.scss */
+.row-form {
+  margin-bottom: 0; }
+
+@media (min-width: 480px) {
+  /* line 154, scss/_agroturismo.scss */
+  .seccion-sectores div li.casaDesplegar {
+    display: block;
+    width: 100%;
+    border-right: none; } }
+@media (min-width: 768px) {
+  /* line 163, scss/_agroturismo.scss */
+  li.active:before {
+    bottom: -100px; }
+
+  /* line 167, scss/_agroturismo.scss */
+  .seccion-sectores div li.casaDesplegar {
+    display: inline-block;
+    width: calc(50% - 20px);
+    margin-left: 15px;
+    margin-bottom: 100px;
+    height: auto;
+    position: relative; }
+
+  /* line 176, scss/_agroturismo.scss */
+  .content.active {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    transition: all .5s;
+    min-height: 1000px;
+    display: block;
+    opacity: 1;
+    position: absolute; }
+
+  /* line 186, scss/_agroturismo.scss */
+  .logistica .seccion-sectores div li.casaDesplegar.active {
+    margin-bottom: 1300px; }
+
+  /* line 191, scss/_agroturismo.scss */
+  .content:nth-of-type(1).active,
+  .content:nth-of-type(2).active {
+    top: 535px; }
+
+  /* line 197, scss/_agroturismo.scss */
+  .content:nth-of-type(3).active,
+  .content:nth-of-type(4).active {
+    top: 1120px; }
+
+  /* line 202, scss/_agroturismo.scss */
+  .content:nth-of-type(5).active,
+  .content:nth-of-type(6).active {
+    top: 1705px; } }
+@media (min-width: 992px) {
+  /* line 213, scss/_agroturismo.scss */
+  .casa {
+    margin-bottom: 0; }
+
+  /* line 219, scss/_agroturismo.scss */
+  .casa-form {
+    padding-top: 0px; }
+
+  /* line 223, scss/_agroturismo.scss */
+  .seccion-sectores div li.casaDesplegar {
+    display: inline-block;
+    width: calc(33.333% - 30px);
+    margin-left: 25px;
+    margin-bottom: 100px;
+    height: auto;
+    position: relative; }
+
+  /* line 232, scss/_agroturismo.scss */
+  .seccion-sectores div li.casaDesplegar.active {
+    margin-bottom: 100px; }
+
+  /* line 237, scss/_agroturismo.scss */
+  .content.active {
+    transition: all .5s;
+    min-height: 800px;
+    display: block;
+    opacity: 1;
+    position: absolute; }
+
+  /* line 245, scss/_agroturismo.scss */
+  .logistica .seccion-sectores div li.casaDesplegar.active {
+    margin-bottom: 1000px; }
+
+  /* line 250, scss/_agroturismo.scss */
+  .content:nth-of-type(1).active,
+  .content:nth-of-type(2).active,
+  .content:nth-of-type(3).active {
+    top: 536px; }
+
+  /* line 257, scss/_agroturismo.scss */
+  .content:nth-of-type(4).active,
+  .content:nth-of-type(5).active,
+  .content:nth-of-type(6).active {
+    top: 1120px; } }
+@media (min-width: 1200px) {
+  /* line 268, scss/_agroturismo.scss */
+  .logistica .seccion-sectores div li.casaDesplegar.active {
+    margin-bottom: 1000px; }
+
+  /* line 273, scss/_agroturismo.scss */
+  .content:nth-of-type(1).active,
+  .content:nth-of-type(2).active,
+  .content:nth-of-type(3).active {
+    top: 548px; }
+
+  /* line 280, scss/_agroturismo.scss */
+  .content:nth-of-type(4).active,
+  .content:nth-of-type(5).active,
+  .content:nth-of-type(6).active {
+    top: 1145px; } }
+@media (min-width: 1500px) {
+  /* line 295, scss/_agroturismo.scss */
+  .content:nth-of-type(1).active,
+  .content:nth-of-type(2).active,
+  .content:nth-of-type(3).active {
+    top: 610px; }
+
+  /* line 302, scss/_agroturismo.scss */
+  .content:nth-of-type(4).active,
+  .content:nth-of-type(5).active,
+  .content:nth-of-type(6).active {
+    top: 1276px; } }
+/* ------- Entorno & Blog ------ */
+/* line 2, scss/_entornoblog.scss */
+.card-shadow {
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 80px;
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.3);
+  background: white;
+  transition: 0.3s ease; }
+
+/* line 11, scss/_entornoblog.scss */
+.card-shadow:hover {
+  box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.6); }
+
+/* line 15, scss/_entornoblog.scss */
+.secondary-bg {
+  background: #524f4c; }
+
+/* line 19, scss/_entornoblog.scss */
+.card-image-blog {
+  padding-left: 0;
+  padding-right: 0; }
+
+/* line 24, scss/_entornoblog.scss */
+.card-text-blog {
+  padding-left: 30px;
+  padding-right: 30px; }
+
+/* line 29, scss/_entornoblog.scss */
+.post-label {
+  position: absolute;
+  z-index: 1;
+  text-align: left;
+  width: 120px;
+  height: 42px;
+  padding-top: 8px;
+  font-family: 'Source Sans Pro', serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: none; }
+
+/* line 45, scss/_entornoblog.scss */
+.carousel-post-label {
+  top: 30px; }
+
+/* ------- Post ------ */
+@media (min-width: 992px) {
+  /* line 62, scss/_entornoblog.scss */
+  .principal {
+    right: -155px; }
+
+  /* line 66, scss/_entornoblog.scss */
+  .principal-post {
+    right: 0px; } }

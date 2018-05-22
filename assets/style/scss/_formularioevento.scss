@@ -1,0 +1,113 @@
+.containerFormulario {
+    z-index: 1;
+    position: relative;
+    height: auto;
+    top: -720px;
+    padding-top: 50px;
+}
+
+.containerFormularioSubpage{
+    // top: 100px;
+    // padding-bottom: 60px;
+}
+
+.introFormulario {
+    font-size: 32px;
+    line-height: 42px;
+    text-align: left;
+    font-family: 'Lora-Regular', serif;
+    color: $primary;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    white-space:pre-line;
+}
+
+
+.phoneCall {
+    position: relative;
+    margin-top: -100px;
+    display: block;
+    width: 274px;
+    height: 125px;
+    margin-left: auto;
+    margin-right: auto;
+    background:$primary;
+    padding: 20px 0;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.phoneCall:hover {
+    background: $secondary;
+}
+
+.textCall {
+    font-family: 'Source Sans Pro', serif;
+    text-transform: uppercase;
+    color: $white;
+    padding: 0;
+}
+
+.phoneNummer {
+    font-family: 'Source Sans Pro', serif;
+    font-weight: 900;
+    color: $white;
+    font-size: 46px;
+    padding-bottom: 20px;
+}
+
+.phoneNummer:hover {
+    color: $white;
+    text-decoration: none;
+}
+
+.papa{
+    margin-top: 100px;
+}
+
+.rowIntro {
+    // background:red;
+}
+
+.rowForm {
+    // background:green;
+}
+
+
+@media (min-width: 480px) {
+
+    .phoneCall {
+        margin-top: -140px;
+    }
+
+}
+
+
+@media (min-width: 768px) {
+
+    .containerFormulario {
+        top: -480px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .containerFormulario {
+        top: -260px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .containerFormulario {
+        top: -260px;
+    }
+}
+
+@media (min-width: 1500px) {
+
+    .containerFormulario {
+        top: -340px;
+    }
+}

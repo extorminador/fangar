@@ -1,0 +1,68 @@
+.containerFormularioBungalow {
+    z-index: 1;
+    position: relative;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 70px;
+    top: -700px;
+    background: lighten($ligthenbrown,30%);
+}
+
+.containerFormularioBungalowSubpage {
+    z-index: 1;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 70px;
+    background: lighten($ligthenbrown,30%);
+}
+
+.cardImageBungalow {
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid $white;
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,.3);
+    margin-top: 0px;
+}
+
+.datepicker {
+    height: 3rem !important;
+}
+
+.select-wrapper span.caret {
+    color: $ligthenbrown;
+    padding-top: 5px;
+    right: 10px;
+}
+
+
+@media (min-width: 768px) {
+
+    .containerFormularioBungalow {
+        top: -450px;
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    .containerFormularioBungalow {
+        top: -250px;
+    }
+    .cardImageBungalow {
+        margin-top: 100px;
+        margin-bottom: 80px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    .cardImageBungalow {
+        margin-bottom: 50px;
+    }
+}
+
+
+
+
+
